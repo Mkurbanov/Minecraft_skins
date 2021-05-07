@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_mods">
+
+    <fragment
+        android:id="@+id/navigation_mods"
+        android:name="com.mkurbanov.minecraftskins.ui.home.HomeFragment"
+        android:label="@string/title_mods"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_favs"
+        android:name="com.mkurbanov.minecraftskins.ui.favorites.FavFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_dashboard" />
+</navigation>

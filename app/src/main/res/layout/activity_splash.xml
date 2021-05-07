@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_bg" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/minecraft_splash_bg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="5000dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/splash_width"
+                android:layout_height="@dimen/splash_width"
+                android:layout_gravity="center"
+                android:src="@drawable/splash_avatar_bg" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/splash_inner_image_width"
+                android:layout_height="@dimen/splash_inner_image_width"
+                android:layout_gravity="center"
+                app:cardCornerRadius="5000dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.slaviboy.progressbar.ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="287dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/card_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/progress_bg"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        app:corner_radius="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:percentage="10"
+        app:srcCompat="@drawable/progress"
+        app:start_animation="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loading"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="@dimen/text_big_size" />
+
+</RelativeLayout>

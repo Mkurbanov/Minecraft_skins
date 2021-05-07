@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Minecraft skins</string>
+    <string name="title_mods">Mods</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="download">Download</string>
+    <string name="downloading">Downloading</string>
+    <string name="install">Install</string>
+    <string name="loading">Loading...</string>
+</resources>

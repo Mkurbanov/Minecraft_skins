@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="navigation_bar_height">98dp</dimen>
+    <dimen name="text_big_size">80sp</dimen>
+    <dimen name="splash_width">500dp</dimen>
+    <dimen name="splash_inner_image_width">480dp</dimen>
+    <dimen name="bottom_icon_size">42dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">72dp</dimen>
+</resources>

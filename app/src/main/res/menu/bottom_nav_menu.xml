@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_mods"
+        android:icon="@drawable/bottom_nav_item_mods"
+        android:title="@string/title_mods" />
+
+    <item
+        android:id="@+id/navigation_favs"
+        android:icon="@drawable/bottom_nav_item_fav"
+        android:title="@string/title_favorites" />
+
+</menu>
